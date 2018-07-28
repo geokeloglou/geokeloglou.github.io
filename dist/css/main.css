@@ -48,14 +48,14 @@
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
-    transition: all 0.5s ease-out;
-    transform: translate3d(0, -100%, 0); }
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/personal-photo_250x250.jpg");
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -65,70 +65,30 @@
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #eece1a; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link:hover {
+      color: #eece1a; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
 
-.nav-link {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 0.5rem 0;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease-out; }
-  .nav-link:hover {
-    color: #eece1a; }
-
 .nav-item:nth-child(2) {
   transition-delay: 0.2s; }
-
-.nav-link {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 0.5rem 0;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease-out; }
-  .nav-link:hover {
-    color: #eece1a; }
 
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
 
-.nav-link {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 0.5rem 0;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease-out; }
-  .nav-link:hover {
-    color: #eece1a; }
-
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
-
-.nav-link {
-  display: inline-block;
-  position: relative;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 0.5rem 0;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease-out; }
-  .nav-link:hover {
-    color: #eece1a; }
 
 * {
   box-sizing: border-box; }
@@ -220,12 +180,49 @@ main {
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
+.projects-info {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects-info img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects-info img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects-info {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (max-width: 769px) and (max-width: 1170px) {
+  .projects-info {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -250,13 +247,17 @@ main {
       background: url("../img/personal-photo_150x150.jpg");
       width: 150px;
       height: 150px; }
-  menu-branding {
+  .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects-info {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects-info {
+    grid-template-columns: 1fr; } }
