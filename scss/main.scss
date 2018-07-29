@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 * {
   box-sizing: border-box;
 }
@@ -10,7 +11,7 @@ body {
   color: set-text-color($primary-color);
   height: 100px;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
 }
 
@@ -24,8 +25,8 @@ h3 {
   }
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    padding: 0.4rem 1rem;
+    background: rgba(darken(#808080, 1), 0.2); // border-bottom: $secondary-color 1px solid;
   }
 }
 
@@ -50,7 +51,8 @@ main {
   .icons {
     margin-top: 1rem;
     a {
-      padding: 0.4rem;
+      color: #000000;
+      padding: 0.5rem;
       &:hover {
         color: $secondary-color;
         @include easeOut;
@@ -60,21 +62,21 @@ main {
   &#home {
     h1 {
       overflow: hidden;
-      margin-top: 20vh;
+      margin-top: 25vh;
     }
   }
 }
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 40px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 5px solid;
   }
   .bio {
     grid-area: bio;
@@ -82,15 +84,14 @@ main {
   }
   .job-1 {
     grid-area: job1;
-  }
-  .job-2 {
-    grid-area: job2;
-  }
-  .job-3 {
-    grid-area: job3;
-  }
+  } // .job-2 {
+  //   grid-area: job2;
+  // }
+  // .job-3 {
+  //   grid-area: job3;
+  // }
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten($secondary-color, 35);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
