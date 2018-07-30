@@ -51,7 +51,7 @@ main {
     margin-top: 1rem;
     a {
       color: #000000;
-      padding: 0.5rem;
+      padding: 0.4rem;
       &:hover {
         color: $secondary-color;
         @include easeOut;
