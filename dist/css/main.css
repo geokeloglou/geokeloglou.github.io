@@ -114,7 +114,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.1rem 1rem;
-    background: rgba(125, 125, 125, 0.2); }
+    background: #e6e6e6; }
 
 a {
   color: #fff;
@@ -154,7 +154,6 @@ main {
     border-radius: 50%;
     border: #dddd60 3px solid; }
   .about-info .bio {
-    grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
@@ -204,20 +203,68 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
+  main#home h1 {
+    margin-top: 20vh; }
   .projects-info {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main#home h1 {
+    margin-top: 20vh; }
   .projects-info {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1rem; } }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
+  main#home h1 {
+    margin-top: 20vh; }
   main {
+    padding: 4rem;
     align-items: center; }
     main .lg-heading {
       font-size: 4rem; }
     main .sm-heading {
       font-size: 1rem; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0);
+      font-size: 24px; }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/personal-photo_150x150.jpg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 20vh; }
+  main {
+    padding: 2rem; }
+    main .lg-heading {
+      font-size: 2rem; }
+    main .sm-heading {
+      font-size: 0.5rem; }
+    main .projects-info {
+      grid-template-columns: 1fr; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -243,30 +290,3 @@ main {
     grid-template-columns: 1fr; }
   .projects-info {
     grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
-  main .lg-heading {
-    font-size: 2rem; }
-  main .sm-heading {
-    font-size: 0.5rem; }
-  main .projects-info {
-    grid-template-columns: 1fr; }
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/personal-photo_150x150.jpg");
-      width: 150px;
-      height: 150px; } }

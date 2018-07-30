@@ -25,7 +25,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.1rem 1rem;
-    background: rgba(darken(#808080, 1), 0.2); // border-bottom: $secondary-color 1px solid;
+    background: darken($primary-color, 10);
   }
 }
 
@@ -78,7 +78,7 @@ main {
     border: $secondary-color 3px solid;
   }
   .bio {
-    grid-area: bio;
+    // grid-area: bio; //Fix
     font-size: 1.5rem;
   }
   .job-1 {
