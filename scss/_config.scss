@@ -28,7 +28,7 @@ $secondary-color: #dddd60;
 }
 
 @mixin mediaLg {
-  @media screen and (max-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }

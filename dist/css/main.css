@@ -113,7 +113,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.4rem 1rem;
+    padding: 0.1rem 1rem;
     background: rgba(125, 125, 125, 0.2); }
 
 a {
@@ -207,7 +207,7 @@ main {
   .projects-info {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (max-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects-info {
     grid-template-columns: repeat(3, 1fr); } }
 
