@@ -69,7 +69,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 40px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
   grid-template-columns: repeat(3, 1fr);
   .bio-image {
     grid-area: bioimage;
@@ -78,8 +78,10 @@ main {
     margin: auto;
     border-radius: 50%;
   }
+  .bio p {
+    font-size: 1rem;
+  }
   .bio {
-    // grid-area: bio; //Fix
     font-size: 1.5rem;
   }
   .job-1 {

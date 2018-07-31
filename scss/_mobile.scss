@@ -15,124 +15,12 @@
   }
   main {
     padding: 4rem;
-    align-items: center;
     .lg-heading {
       font-size: 4rem;
     }
     .sm-heading {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
-  }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1rem;
-  }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-    &.show {
-      transform: translate3d(0, 0, 0);
-      font-size: 24px;
-    }
-  }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-    .portrait {
-      background: url('../img/face.jpg');
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-    }
-  }
-  .projects-info {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1rem;
-  }
-}
-
-// Tables & Small Laptops - Notebooks
-@include mediaMd {
-  main#home h1 {
-    margin-top: 20vh;
-  }
-  main {
-    padding: 4rem;
-    align-items: center;
-    .lg-heading {
-      font-size: 4rem;
-    }
-    .sm-heading {
-      font-size: 1rem;
-    }
-  }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1rem;
-  }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-    &.show {
-      transform: translate3d(0, 0, 0);
-      font-size: 24px;
-    }
-  }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-    .portrait {
-      background: url('../img/face.jpg');
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-    }
-  } // .about-info {
-  //   grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-  //   grid-template-columns: 1fr;
-  // }
-  // .projects-info {
-  //   grid-template-columns: repeat(2, 1fr);
-  // }
-}
-
-// Smartphones
-@include mediaSm {
-  main#home h1 {
-    margin-top: 20vh;
-  }
-  main {
-    padding: 2rem;
-    .lg-heading {
-      font-size: 2rem;
-    }
-    .sm-heading {
-      font-size: 0.5rem;
-    }
-    .projects-info {
-      grid-template-columns: 1fr;
-    }
-  }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1rem;
   }
   ul.menu-nav,
   div.menu-branding {
@@ -160,7 +48,103 @@
     }
   }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    font-size: 1rem;
+  }
+  .projects-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Tables & Small Laptops - Notebooks
+@include mediaMd {
+  main#home h1 {
+    margin-top: 20vh;
+  }
+  main {
+    padding: 3rem;
+    .lg-heading {
+      font-size: 3rem;
+    }
+    .sm-heading {
+      font-size: 1rem;
+    }
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    &.show {
+      transform: translate3d(0, 0, 0);
+      font-size: 24px;
+    }
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+    .portrait {
+      background: url('../img/face.jpg');
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+  .about-info {
+    grid-template-columns: 1fr;
+  }
+  .projects-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  main#home h1 {
+    margin-top: 20vh;
+  }
+  main {
+    padding: 2rem;
+    .lg-heading {
+      font-size: 2.2rem;
+    }
+    .sm-heading {
+      font-size: 0.7rem;
+    }
+    .projects-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    &.show {
+      transform: translate3d(0, 0, 0);
+      font-size: 24px;
+    }
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+    .portrait {
+      background: url('../img/face.jpg');
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+  .about-info {
     grid-template-columns: 1fr;
   }
   .projects-info {
