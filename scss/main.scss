@@ -69,8 +69,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 40px;
-  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2';
+  grid-template-columns: repeat(2, 1fr);
   .bio-image {
     grid-area: bioimage;
     width: 250px;
@@ -89,9 +89,6 @@ main {
   }
   .job-2 {
     grid-area: job2;
-  }
-  .job-3 {
-    grid-area: job3;
   }
   .job {
     background: lighten($secondary-color, 35);
@@ -129,7 +126,7 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: darken($primary-color, 10);
   color: #fff;
 }
 
@@ -140,10 +137,9 @@ main {
 }
 
 #main-footer {
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
   height: 60px;
 }
 
