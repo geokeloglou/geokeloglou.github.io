@@ -146,8 +146,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 40px;
-  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2';
+  grid-template-columns: repeat(2, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     width: 250px;
@@ -162,8 +162,6 @@ main {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
   .about-info .job {
     background: #fcfcf3;
     padding: 0.5rem;
@@ -190,7 +188,7 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: gray;
+  background: #e6e6e6;
   color: #fff; }
 
 .btn-light {
@@ -198,17 +196,14 @@ main {
   color: #333; }
 
 #main-footer {
-  text-align: center;
+  text-align: left;
   padding: 1rem;
   background: #e6e6e6;
-  color: #000;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
   main#home h1 {
-    margin-top: 20vh; }
-  .projects-info {
-    grid-template-columns: repeat(4, 1fr); } }
+    margin-top: 20vh; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main#home h1 {
@@ -241,8 +236,7 @@ main {
       height: 150px;
       border-radius: 50%; }
   .about-info {
-    font-size: 1rem; }
-  .projects-info {
+    font-size: 1rem;
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -276,9 +270,7 @@ main {
       height: 150px;
       border-radius: 50%; }
   .about-info {
-    grid-template-columns: 1fr; }
-  .projects-info {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -313,6 +305,4 @@ main {
       height: 150px;
       border-radius: 50%; }
   .about-info {
-    grid-template-columns: 1fr; }
-  .projects-info {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
