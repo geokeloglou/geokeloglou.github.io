@@ -126,14 +126,16 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 10);
-  color: #fff;
+  background: lighten($primary-color, 50);
+  color: #333;
+  text-align: center;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
+  background: darken($primary-color, 10);
+  color: #fff;
+  text-align: center;
 }
 
 #main-footer {
