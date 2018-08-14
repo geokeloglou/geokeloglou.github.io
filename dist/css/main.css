@@ -188,12 +188,14 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: #e6e6e6;
-  color: #fff; }
+  background: white;
+  color: #333;
+  text-align: center; }
 
 .btn-light {
-  background: white;
-  color: #333; }
+  background: #e6e6e6;
+  color: #fff;
+  text-align: center; }
 
 #main-footer {
   text-align: left;
