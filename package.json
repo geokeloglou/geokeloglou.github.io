@@ -6,7 +6,6 @@
   "homepage": "https://geokeloglou.github.io/geokeloglou.me",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
   },
   "author": "George Keloglou",
   "license": "MIT",
