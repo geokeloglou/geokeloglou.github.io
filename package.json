@@ -8,10 +8,6 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
-  "gh-pages": {
-    "staticpath": "dist",
-    "cname": "geokeloglou.me"
-  },
   "author": "George Keloglou",
   "license": "MIT",
   "dependencies": {
