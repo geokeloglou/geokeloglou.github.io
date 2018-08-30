@@ -171,6 +171,8 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects-info p {
+    text-align: center; }
   .projects-info img {
     width: 100%; }
     .projects-info img:hover {
