@@ -1,5 +1,5 @@
 # geokeloglou.me
-Personal website
+Practising on Personal website
 
 ## License
 
