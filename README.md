@@ -1,4 +1,4 @@
-# geokeloglou.me
+# geokeloglou.xyz
 Practising on Personal website
 
 ## License
