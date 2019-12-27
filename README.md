@@ -1,6 +1,6 @@
 # geokeloglou.xyz
 
-Practising on Personal website
+Personal website
 
 ## License
 
