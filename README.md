@@ -1,4 +1,4 @@
-# geokeloglou.xyz
+# geokeloglou.com
 
 Personal website
 
