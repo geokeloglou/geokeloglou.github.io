@@ -1,25 +1,16 @@
 const menuBtn = document.querySelector('.menu-btn');
 const blog = document.querySelector('.blog a');
-
-menuBtn.addEventListener('click', toggleMenu);
-
-let showMenu = true;
+let showMenu = false;
 
 function toggleMenu() {
-  if (showMenu) {
+  if (!showMenu) {
     blog.style.display = "block";
-    showMenu = !showMenu;
     menuBtn.classList.add('close');
   } else {
     blog.style.display = "none";
-    showMenu = !showMenu;
     menuBtn.classList.remove('close');
-
   }
+  showMenu = !showMenu;
 }
 
-function close_window() {
-  if (confirm("Close Window?")) {
-    close();
-  }
-}
+menuBtn.addEventListener('click', toggleMenu);
